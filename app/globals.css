@@ -1,0 +1,84 @@
+@import "tailwindcss";
+
+:root {
+  --ink: #12151a;
+  --paper: #f5f3ee;
+  --paper-dim: #eae7df;
+  --blueprint: #1b4f72;
+  --blueprint-bright: #2e6da4;
+  --hazard: #e8a93d;
+  --steel: #8b8d93;
+  --steel-line: #d8d5cc;
+  --ok: #3d7a5c;
+  --fail: #b3492e;
+}
+
+@theme inline {
+  --color-ink: var(--ink);
+  --color-paper: var(--paper);
+  --color-paper-dim: var(--paper-dim);
+  --color-blueprint: var(--blueprint);
+  --color-blueprint-bright: var(--blueprint-bright);
+  --color-hazard: var(--hazard);
+  --color-steel: var(--steel);
+  --color-steel-line: var(--steel-line);
+  --color-ok: var(--ok);
+  --color-fail: var(--fail);
+  --font-display: "Space Grotesk", sans-serif;
+  --font-body: "Inter", sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+::selection {
+  background: var(--hazard);
+  color: var(--ink);
+}
+
+.grain {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 999;
+  opacity: 0.035;
+  mix-blend-mode: multiply;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+
+.text-balance {
+  text-wrap: balance;
+}
+
+:focus-visible {
+  outline: 2px solid var(--blueprint-bright);
+  outline-offset: 3px;
+}
