@@ -209,8 +209,7 @@ export const buildLog: BuildLogEntry[] = [
     photoSrc: "/images/melvin-v6-concept.png",
     photoAspectRatio: "484 / 337",
     body: [
-      "The current build, and the first clean-sheet redesign since the original. Instead of another patch on the existing architecture, V6 is built around a brand-new modular system: subsystems designed to be swapped independently, so a damaged section means replacing a module between matches instead of rebuilding the robot. It takes V5's slide-in shuffler subassembly to its logical conclusion, and every previous rev's lesson feeds into the platform, from V3's cracked bearing holders to V4's energy-absorbing TPU.",
-      "Modularity also changes strategy, not just repairs. With drive and weapon sections that swap independently, the same chassis can run different configurations depending on the opponent: wheels when a matchup calls for speed, shufflers when the weight bonus buys more armor or blade, and weapon swaps to counter whatever is across the arena. Instead of one fixed design per season, V6 is a platform that adapts between matches.",
+      "The current build, and the first clean-sheet redesign since the original. Instead of another patch on the existing architecture, V6 is built around a brand-new modular system: subsystems designed to be swapped independently, so a damaged section means replacing a module between matches instead of rebuilding the robot. The same idea changes strategy, since one chassis can run different configurations depending on the opponent: wheels when a matchup calls for speed, shufflers when the weight bonus buys more armor or blade, weapon swaps to counter whatever is across the arena. Every previous rev's lesson feeds into the platform, from V3's cracked bearing holders to V4's energy-absorbing TPU. The result is a single platform that adapts match to match.",
     ],
   },
 ];
@@ -232,7 +231,9 @@ export const experience: ExperienceEntry[] = [
     id: "cottrell",
     meta: "SUMMER 2024 · GAINESVILLE, GA",
     company: "Cottrell Trailers",
-    photoLabel: "Cottrell desk/parts",
+    photoLabel: "Cottrell production floor, car-hauler trailers on the line",
+    photoSrc: "/images/cottrell-floor.jpg",
+    photoAspect: "square" as const,
     body: "Mechanical engineering internship at the world's largest manufacturer of over-the-road auto transport equipment. Focused on 3D modeling and 2D drafting in Autodesk Inventor and AutoCAD, both new tools at the time. Work included a round-tube component with slot, through-hole, and bracket-aligned notches, full assembly drawings with exploded views, and technical drawings for a switch from painted to non-skid tape trailer surfaces.",
     tags: ["Inventor", "AutoCAD", "2D Drafting", "DFM"],
   },
