@@ -179,7 +179,7 @@ export const buildLog: BuildLogEntry[] = [
     photoLabel2: "Bare V4 TPU chassis fresh off the print bed",
     photoSrc2: "/images/melvin-v4-chassis-print.jpg",
     body: [
-      "The direct answer to V3's failure: chassis material switched from aluminum to 3D-printed TPU, trading rigidity for impact absorption. TPU flexes and dissipates energy instead of cracking. The weapon system also got a significant upgrade this round. The material change proved itself in combat and set the template every version since has built on.",
+      "The direct answer to V3's failure: chassis material switched from aluminum to 3D-printed TPU, trading rigidity for impact absorption. TPU flexes and dissipates energy instead of cracking. The weapon system got upgraded this round too. The material change proved itself in combat and set the template every version since has built on.",
     ],
   },
   {
@@ -194,7 +194,7 @@ export const buildLog: BuildLogEntry[] = [
     videoPosition: "50% 22%",
     body: [
       "The headline change: wheels were gone entirely, replaced by a shuffler locomotion system. NHRL awards a weight bonus for non-traditional locomotion, and Melvin cashed it in on thicker AR500 steel weapon blades with more strike surface, cut by SendCutSend and mounted on a timing pulley between the two blades.",
-      "The chassis kept V4's proven approach, printed as a single piece in 95A High-Speed TPU, with the inner back corners re-engineered so the shufflers slide in as self-contained modules. With no clear shuffler reference designs online, the mechanism went through numerous designed-built-tested variations, prototyped in PLA, with the final shuffler feet printed in TPU for traction in the arena.",
+      "The chassis kept V4's proven approach, printed as a single piece in 95A High-Speed TPU, with the inner back corners re-engineered so the shufflers slide in as self-contained modules. With no clear shuffler reference designs online, the mechanism took round after round of design-build-test, prototyped in PLA, with the final shuffler feet printed in TPU for traction in the arena.",
     ],
     detailLabel: "AN UNPLANNED WIN",
     detailBody:
@@ -209,7 +209,7 @@ export const buildLog: BuildLogEntry[] = [
     photoSrc: "/images/melvin-v6-concept.png",
     photoAspectRatio: "484 / 337",
     body: [
-      "The current build, and the first clean-sheet redesign since the original. Instead of another patch on the existing architecture, V6 is built around a brand-new modular system: subsystems designed to be swapped independently, so a damaged section means replacing a module between matches instead of rebuilding the robot. The same idea changes strategy, since one chassis can run different configurations depending on the opponent: wheels when a matchup calls for speed, shufflers when the weight bonus buys more armor or blade, weapon swaps to counter whatever is across the arena. Every previous rev's lesson feeds into the platform, from V3's cracked bearing holders to V4's energy-absorbing TPU. The result is a single platform that adapts match to match.",
+      "The current build, and the first clean-sheet redesign since the original. Instead of another patch on the existing architecture, V6 is built around a brand-new modular system: subsystems designed to be swapped independently, so a damaged section means replacing a module between matches instead of rebuilding the robot. The same idea changes strategy, since one chassis can run different configurations depending on the opponent: wheels when a matchup calls for speed, shufflers when the weight bonus buys more armor or blade, weapon swaps to counter whatever is across the arena. Every previous rev's lesson feeds into the platform, from V3's cracked bearing holders to V4's energy-absorbing TPU.",
     ],
   },
 ];
@@ -244,7 +244,7 @@ export const experience: ExperienceEntry[] = [
     photoLabel: "L1 certification rocket, fresh paint in the spray booth",
     photoSrc: "/images/rocket-l1.jpg",
     photoAspect: "tall" as const,
-    body: "Team member on CWRU's student rocketry team. Designed and assembled an L1 certification rocket to NAR (National Association of Rocketry) specifications, contributing to the team's mechanical fabrication work.",
+    body: "Team member on CWRU's student rocketry team. Designed and assembled an L1 certification rocket to NAR (National Association of Rocketry) specifications, and helped with the team's mechanical fabrication work.",
     tags: ["Rocketry", "NAR L1 Spec", "Mechanical Fabrication", "Assembly"],
   },
   {
