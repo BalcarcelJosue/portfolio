@@ -19,7 +19,7 @@ export default function About() {
           viewport={{ once: true, margin: "-60px" }}
           transition={{ duration: 0.6 }}
         >
-          <PhotoFrame label="casual/personal shot" aspect="tall" />
+          <PhotoFrame label={about.photoLabel} src={about.photoSrc} aspect="tall" />
           <span className="mt-2.5 block font-mono text-[11px] tracking-wide text-steel">
             FIG. 6 — OFF THE CLOCK
           </span>

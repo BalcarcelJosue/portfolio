@@ -137,7 +137,7 @@ export default function Hero() {
         transition={{ duration: 0.7, delay: 0.3, ease: [0.22, 1, 0.36, 1] }}
         className="relative z-10 order-first max-w-[280px] justify-self-center md:order-last md:max-w-none md:justify-self-auto"
       >
-        <PhotoFrame label="portrait or robot action shot" aspect="square" />
+        <PhotoFrame label={profile.heroPhotoLabel} src={profile.heroPhotoSrc} aspect="tall" />
         <span className="mt-2.5 block font-mono text-[11px] tracking-wide text-steel">
           FIG. 0 — PROFILE
         </span>
