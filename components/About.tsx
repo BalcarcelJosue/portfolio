@@ -7,7 +7,7 @@ import { about } from "@/lib/content";
 export default function About() {
   return (
     <section id="about" className="mx-auto max-w-[1180px] px-6 pb-24 md:px-18 md:pb-30">
-      <div className="mb-16 flex items-center gap-4 md:mb-20" aria-hidden="true">
+      <div className="mb-12 flex items-center gap-4 md:mb-14" aria-hidden="true">
         <div className="h-0 flex-1 border-t-[1.5px] border-ink" />
         <span className="font-mono text-[11px] tracking-wide text-steel">§</span>
         <div className="h-0 flex-1 border-t-[1.5px] border-ink" />

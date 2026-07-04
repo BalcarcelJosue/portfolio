@@ -13,14 +13,14 @@ const statusColor: Record<BuildLogStatus, string> = {
 
 export default function BuildLog() {
   return (
-    <section id="combat" className="bg-ink py-24 text-paper md:py-30">
+    <section id="combat" className="bg-ink pt-14 pb-24 text-paper md:pt-16 md:pb-30">
       <div className="mx-auto max-w-[1180px] px-6 md:px-18">
-        <div className="mb-16 max-w-[640px]">
+        <div className="mb-16">
           <span className="mb-3 block font-mono text-sm tracking-wide text-hazard">02</span>
           <h2 className="mb-4 font-display text-[clamp(32px,4vw,48px)] font-bold tracking-tight">
             Build Log: Melvin
           </h2>
-          <p className="max-w-[52ch] text-base text-[#A8ACB5]">
+          <p className="text-base text-[#A8ACB5]">
             Seven iterations, NHRL 3lb class. Each entry is what actually happened — including
             the failures.
           </p>

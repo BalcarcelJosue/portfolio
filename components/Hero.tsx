@@ -29,7 +29,7 @@ export default function Hero() {
   return (
     <header
       id="top"
-      className="relative grid min-h-screen grid-cols-1 items-center gap-10 overflow-hidden px-6 pt-32 pb-20 md:grid-cols-[1.15fr_0.85fr] md:px-18 md:pt-32"
+      className="relative flex min-h-screen items-center overflow-hidden pt-32 pb-10 md:pt-32"
     >
       {/* Cursor-reactive blueprint grid */}
       <div
@@ -51,6 +51,7 @@ export default function Hero() {
         }
       />
 
+      <div className="mx-auto grid w-full max-w-[1180px] grid-cols-1 items-center gap-10 px-6 md:grid-cols-[1.15fr_0.85fr] md:px-18">
       <div className="relative z-10">
         <motion.p
           initial={{ opacity: 0, y: 8 }}
@@ -141,6 +142,7 @@ export default function Hero() {
           FIG. 0 — PROFILE
         </span>
       </motion.div>
+      </div>
     </header>
   );
 }

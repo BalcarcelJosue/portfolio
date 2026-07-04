@@ -6,7 +6,7 @@ import { experience } from "@/lib/content";
 
 export default function Experience() {
   return (
-    <section id="experience" className="mx-auto max-w-[1180px] px-6 py-24 md:px-18 md:py-30">
+    <section id="experience" className="mx-auto max-w-[1180px] px-6 pt-[84px] pb-2 md:px-18 md:pb-4">
       <div className="mb-16 max-w-[640px]">
         <span className="mb-3 block font-mono text-sm tracking-wide text-blueprint">03</span>
         <h2 className="mb-4 font-display text-[clamp(32px,4vw,48px)] font-bold tracking-tight">

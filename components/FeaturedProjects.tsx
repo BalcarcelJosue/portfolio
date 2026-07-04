@@ -6,13 +6,13 @@ import { featuredProjects } from "@/lib/content";
 
 export default function FeaturedProjects() {
   return (
-    <section id="projects" className="mx-auto max-w-[1180px] px-6 py-24 md:px-18 md:py-30">
-      <div className="mb-16 max-w-[640px]">
+    <section id="projects" className="mx-auto max-w-[1180px] px-6 pt-8 pb-6 md:px-18 md:pt-10 md:pb-8">
+      <div className="mb-16">
         <span className="mb-3 block font-mono text-sm tracking-wide text-blueprint">01</span>
         <h2 className="mb-4 font-display text-[clamp(32px,4vw,48px)] font-bold tracking-tight">
           Featured Projects
         </h2>
-        <p className="max-w-[52ch] text-base text-steel">
+        <p className="text-base text-steel">
           Two builds that best show how I think: iterate fast, fail informatively, fix the
           real problem.
         </p>
