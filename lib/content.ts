@@ -129,7 +129,8 @@ export const buildLog: BuildLogEntry[] = [
     title: "Melvin V1",
     status: "competed" as BuildLogStatus,
     statusLabel: "NHRL — January 2023",
-    photoLabel: "Melvin V1 on scale, 2:15.9",
+    photoLabel: "Melvin V1 on the scale — 2 lb 15.9 oz, under the 3lb cap",
+    photoSrc: "/images/melvin-v1-scale.jpg",
     body: [
       "First iteration to actually reach competition. Drive came from two Fingertech Mega Spark brushless motors (2300kV); the weapon — a spinning drum, inspired by BattleBots' Minotaur — ran off a 1200kV brushless motor. Every motor, ESC, and the battery connected through bullet connectors for fast field repairs. Final weigh-in: 2 lb 15.9 oz, under the 3lb cap after trimming the weapon and bottom plate.",
     ],
@@ -145,7 +146,10 @@ export const buildLog: BuildLogEntry[] = [
     title: "Melvin V2",
     status: "competed" as BuildLogStatus,
     statusLabel: "NHRL — March 2023",
-    photoLabel: 'Yellow "MELVIN" chassis',
+    photoLabel: 'Melvin V2 head-on — yellow "MELVIN" nameplate',
+    photoSrc: "/images/melvin-v2-front.jpg",
+    photoLabel2: "Melvin V2 three-quarter view, drum forward",
+    photoSrc2: "/images/melvin-v2-angle.jpg",
     body: [
       "The robot got its name and its color scheme this round — bright yellow, a nod to its minion-like proportions. Chassis geometry moved to a pentagon profile with a smaller front cutout for a tighter weapon envelope; bearing holders were redesigned to match the new side-panel angles. Switched to rubber wheels for better traction over the previous iteration.",
     ],
