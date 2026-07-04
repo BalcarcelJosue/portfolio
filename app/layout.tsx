@@ -11,7 +11,7 @@ import "@fontsource/jetbrains-mono/500.css";
 import "@fontsource/jetbrains-mono/600.css";
 import "./globals.css";
 
-const siteUrl = "https://portfolio-balcarceljosues-projects.vercel.app";
+const siteUrl = "https://josuebalcarcel.com";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
