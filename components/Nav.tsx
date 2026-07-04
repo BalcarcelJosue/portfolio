@@ -22,8 +22,12 @@ export default function Nav() {
 
   return (
     <nav
-      className={`fixed inset-x-0 top-0 z-100 flex items-center justify-between border-b border-steel-line px-6 py-5 backdrop-blur-md transition-colors duration-300 md:px-18 ${
-        scrolled ? "bg-paper/96" : "bg-paper/82"
+      className={`fixed inset-x-0 top-0 z-100 flex items-center justify-between border-b border-steel-line px-6 py-5 transition-colors duration-300 md:px-18 ${
+        open
+          ? "bg-paper"
+          : scrolled
+            ? "bg-paper/96 backdrop-blur-md"
+            : "bg-paper/82 backdrop-blur-md"
       }`}
     >
       <a
