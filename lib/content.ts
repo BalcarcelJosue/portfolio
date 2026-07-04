@@ -275,7 +275,7 @@ export const about = {
   photoSrc: "/images/guitar-print.jpg",
   paragraphs: [
     "I'm a Mechanical Engineering student at Case Western Reserve University (Business Management minor), graduating May 2027. CSWA-certified in SolidWorks, bilingual in English and Spanish. The Spanish got a real workout in Fall 2025, studying abroad at Universidad Carlos III de Madrid and serving as Resident Assistant for CWRU's Madrid program.",
-    "Outside the shop: Team Leader for CWRU's NHRL combat robotics team, lead pianist and drummer at my church, and hands-on in my family's construction business, which means my engineering instincts get tested against real jobsites, not just tolerances on a drawing. Sometimes the worlds collide: the guitar body in the photo is 3D-printed, honeycomb infill and all.",
+    "Outside the shop: running my own NHRL combat robotics team as a personal project, lead pianist and drummer at my church, and hands-on in my family's construction business, which means my engineering instincts get tested against real jobsites, not just tolerances on a drawing. Sometimes the worlds collide: the guitar body in the photo is 3D-printed, honeycomb infill and all.",
   ],
   skillGroups: [
     {
