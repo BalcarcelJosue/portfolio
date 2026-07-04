@@ -21,7 +21,7 @@ export default function BuildLog() {
             Build Log: Melvin
           </h2>
           <p className="text-base text-[#A8ACB5]">
-            Seven iterations, NHRL 3lb class. Each entry is what actually happened — including
+            Seven iterations, NHRL 3lb class. Each entry is what actually happened, including
             the failures.
           </p>
         </div>
@@ -101,7 +101,10 @@ export default function BuildLog() {
 
                 <div>
                   {entry.body.map((p, idx) => (
-                    <p key={idx} className="mb-4 text-[15px] text-[#C4C7CE] last:mb-0">
+                    <p
+                      key={idx}
+                      className="mb-4 text-[15px] text-justify text-[#C4C7CE] hyphens-auto last:mb-0"
+                    >
                       {p}
                     </p>
                   ))}
@@ -126,7 +129,9 @@ export default function BuildLog() {
                   )}
 
                   {entry.detailBody && (
-                    <p className="text-[15px] text-[#C4C7CE]">{entry.detailBody}</p>
+                    <p className="text-[15px] text-justify text-[#C4C7CE] hyphens-auto">
+                      {entry.detailBody}
+                    </p>
                   )}
                 </div>
 
