@@ -31,6 +31,7 @@ export default function Experience() {
               label={job.photoLabel}
               src={job.photoSrc}
               aspect={job.photoAspect ?? "wide"}
+              aspectRatio={job.photoAspectRatio}
             />
             <div>
               <p className="mb-2.5 font-mono text-xs tracking-wide text-blueprint">

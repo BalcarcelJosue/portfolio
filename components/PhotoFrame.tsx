@@ -6,6 +6,8 @@ type PhotoFrameProps = {
   videoSrc?: string;
   mediaPosition?: string;
   aspect?: "square" | "tall" | "wide" | "box";
+  /** Custom CSS aspect-ratio (e.g. "1660 / 1370"); overrides the aspect preset */
+  aspectRatio?: string;
   dark?: boolean;
   className?: string;
 };
@@ -23,11 +25,13 @@ export default function PhotoFrame({
   videoSrc,
   mediaPosition,
   aspect = "square",
+  aspectRatio,
   dark = false,
   className = "",
 }: PhotoFrameProps) {
   return (
     <div
+      style={aspectRatio ? { aspectRatio } : undefined}
       className={`relative flex items-center justify-center overflow-hidden border-[1.5px] p-5 text-center ${
         aspectClass[aspect]
       } ${

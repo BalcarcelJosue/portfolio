@@ -210,7 +210,8 @@ export type ExperienceEntry = {
   company: string;
   photoLabel: string;
   photoSrc?: string;
-  photoAspect?: "square" | "tall" | "wide";
+  photoAspect?: "square" | "tall" | "wide" | "box";
+  photoAspectRatio?: string;
   body: string;
   tags: string[];
 };
@@ -251,6 +252,7 @@ export const experience: ExperienceEntry[] = [
     photoLabel: "D.A.R.T. team mid-repair on the #9216 robot — Charged Up season",
     photoSrc: "/images/first-robotics-team.jpg",
     photoAspect: "square" as const,
+    photoAspectRatio: "1660 / 1370",
     body: 'Co-founded Darien High School\'s first-ever robotics team in a school culture built around sports and the arts — and got it funded by the board of education. Competed in the 2023 "Charged Up" season as a rookie team, winning the Rookie All-Star Award. Modeled the swerve-drive chassis (pivoted from an initial 4-wheel direct-drive concept) and a pneumatic grabber mechanism in Fusion 360.',
     tags: ["Team Founding", "Swerve Drive", "Fusion 360", "Rookie All-Star"],
   },
