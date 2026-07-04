@@ -99,6 +99,7 @@ export type BuildLogEntry = {
   photoLabel: string;
   photoSrc?: string;
   photoAspect?: "square" | "tall" | "wide" | "box";
+  photoAspectRatio?: string;
   photoLabel2?: string;
   photoSrc2?: string;
   videoSrc?: string;
@@ -204,10 +205,12 @@ export const buildLog: BuildLogEntry[] = [
     title: "Melvin V6",
     status: "in-progress" as BuildLogStatus,
     statusLabel: "In progress — current build",
-    photoLabel: "Melvin V6 modular platform, prototype schematic",
-    photoSrc: "/images/melvin-v6-schematic.svg",
+    photoLabel: "Melvin V6 modular system concept, exploded view with swappable drive, electronics, and weapon modules",
+    photoSrc: "/images/melvin-v6-concept.png",
+    photoAspectRatio: "755 / 402",
     body: [
       "The current build, and the first clean-sheet redesign since the original. Instead of another patch on the existing architecture, V6 is built around a brand-new modular system: subsystems designed to be swapped independently, so a damaged section means replacing a module between matches instead of rebuilding the robot. It takes V5's slide-in shuffler subassembly to its logical conclusion, and every previous rev's lesson feeds into the platform, from V3's cracked bearing holders to V4's energy-absorbing TPU.",
+      "Modularity also changes strategy, not just repairs. With drive and weapon sections that swap independently, the same chassis can run different configurations depending on the opponent: wheels when a matchup calls for speed, shufflers when the weight bonus buys more armor or blade, and weapon swaps to counter whatever is across the arena. Instead of one fixed design per season, V6 is a platform that adapts between matches.",
     ],
   },
 ];

@@ -73,6 +73,7 @@ export default function BuildLog() {
                       src={entry.photoSrc}
                       dark
                       aspect={entry.photoAspect ?? "square"}
+                      aspectRatio={entry.photoAspectRatio}
                     />
                   )}
                   {entry.photoSrc && entry.videoSrc && (
