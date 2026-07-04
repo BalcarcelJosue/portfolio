@@ -1,0 +1,100 @@
+<svg viewBox="0 0 1200 900" xmlns="http://www.w3.org/2000/svg" font-family="ui-monospace, 'SF Mono', Menlo, monospace">
+  <defs>
+    <marker id="arr" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#1b4f72"/>
+    </marker>
+    <marker id="dot" viewBox="0 0 8 8" refX="4" refY="4" markerWidth="5" markerHeight="5">
+      <circle cx="4" cy="4" r="3" fill="#12151a"/>
+    </marker>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#d8d5cc" stroke-width="0.6"/>
+    </pattern>
+  </defs>
+
+  <!-- sheet -->
+  <rect width="1200" height="900" fill="#f5f3ee"/>
+  <rect x="40" y="40" width="1120" height="790" fill="url(#grid)" stroke="#12151a" stroke-width="2"/>
+
+  <text x="64" y="96" fill="#8b8d93" font-size="15" letter-spacing="2">ISOMETRIC VIEW, EXPLODED</text>
+
+  <!-- ══ TPU chassis: pentagon prism, front facing lower-right ══ -->
+  <!-- left + front-left walls -->
+  <polygon points="513,506.5 360,430 360,500 513,576.5" fill="#d6d2c6" stroke="#12151a" stroke-width="2.5"/>
+  <polygon points="661.5,499.75 513,506.5 513,576.5 661.5,569.75" fill="#d6d2c6" stroke="#12151a" stroke-width="2.5"/>
+  <!-- front + right-chamfer walls -->
+  <polygon points="805.5,427.75 661.5,499.75 661.5,569.75 805.5,497.75" fill="#dedacf" stroke="#12151a" stroke-width="2.5"/>
+  <polygon points="819,353.5 805.5,427.75 805.5,497.75 819,423.5" fill="#dedacf" stroke="#12151a" stroke-width="2.5"/>
+  <!-- top face -->
+  <polygon points="360,430 666,277 819,353.5 805.5,427.75 661.5,499.75 513,506.5" fill="#eae7df" stroke="#12151a" stroke-width="3"/>
+
+  <!-- module sockets on the top face (dashed) -->
+  <g fill="none" stroke="#8b8d93" stroke-width="1.8" stroke-dasharray="7 5">
+    <polygon points="396,430 513,371.5 576,403 459,461.5"/>
+    <polygon points="549,353.5 666,295 729,326.5 612,385"/>
+  </g>
+  <!-- weapon socket on the front wall (dashed) -->
+  <polygon points="769.5,460.75 697.5,496.75 697.5,536.75 769.5,500.75" fill="none" stroke="#8b8d93" stroke-width="1.8" stroke-dasharray="7 5"/>
+
+  <!-- electronics tray, installed in the chassis -->
+  <polygon points="558,411 648,456 648,484 558,439" fill="#dcd8cd" stroke="#12151a" stroke-width="2"/>
+  <polygon points="774,393 648,456 648,484 774,421" fill="#e4e0d5" stroke="#12151a" stroke-width="2"/>
+  <polygon points="558,411 684,348 774,393 648,456" fill="#f5f3ee" stroke="#12151a" stroke-width="2"/>
+
+  <!-- ══ drive module, exploded above its socket ══ -->
+  <polygon points="396,220 459,251.5 459,301.5 396,270" fill="#d6d2c6" stroke="#12151a" stroke-width="2.5"/>
+  <polygon points="459,251.5 576,193 576,243 459,301.5" fill="#dedacf" stroke="#12151a" stroke-width="2.5"/>
+  <polygon points="396,220 513,161.5 576,193 459,251.5" fill="#f5f3ee" stroke="#12151a" stroke-width="2.5"/>
+  <polygon points="441,213.25 499.5,184 531,199.75 472.5,229" fill="#12151a"/>
+  <polygon points="396,262 459,293.5 459,301.5 396,270" fill="#e8a93d"/>
+  <polygon points="459,293.5 576,235 576,243 459,301.5" fill="#e8a93d"/>
+  <path d="M 486 296 L 486 402" fill="none" stroke="#1b4f72" stroke-width="2.5" stroke-dasharray="9 5" marker-end="url(#arr)"/>
+
+  <!-- ══ weapon drum module, exploded off the nose ══ -->
+  <polygon points="774,502.5 810,520.5 810,565.5 774,547.5" fill="#d6d2c6" stroke="#12151a" stroke-width="2.5"/>
+  <polygon points="909,471 810,520.5 810,565.5 909,516" fill="#dedacf" stroke="#12151a" stroke-width="2.5"/>
+  <polygon points="774,502.5 873,453 909,471 810,520.5" fill="#f5f3ee" stroke="#12151a" stroke-width="2.5"/>
+  <g stroke="#12151a" stroke-width="1.4">
+    <line x1="798.75" y1="490.1" x2="834.75" y2="508.1"/>
+    <line x1="823.5" y1="477.75" x2="859.5" y2="495.75"/>
+    <line x1="848.25" y1="465.4" x2="884.25" y2="483.4"/>
+  </g>
+  <line x1="792" y1="511.5" x2="776" y2="519.5" stroke="#12151a" stroke-width="5"/>
+  <line x1="891" y1="462" x2="907" y2="454" stroke="#12151a" stroke-width="5"/>
+  <polygon points="909,508 810,557.5 810,565.5 909,516" fill="#e8a93d"/>
+  <path d="M 786 507 L 742 500" fill="none" stroke="#1b4f72" stroke-width="2.5" stroke-dasharray="9 5" marker-end="url(#arr)"/>
+
+  <!-- ══ labels ══ -->
+  <g font-size="21" letter-spacing="1" fill="#12151a">
+    <line x1="388" y1="222" x2="262" y2="158" stroke="#12151a" stroke-width="1" marker-start="url(#dot)"/>
+    <text x="64" y="150">DRIVE MODULE ×2</text>
+
+    <line x1="890" y1="447" x2="902" y2="424" stroke="#12151a" stroke-width="1" marker-start="url(#dot)"/>
+    <text x="856" y="412">WEAPON MODULE</text>
+
+    <line x1="560" y1="436" x2="280" y2="614" stroke="#12151a" stroke-width="1" marker-start="url(#dot)"/>
+    <text x="64" y="640">ELECTRONICS TRAY</text>
+
+    <line x1="720" y1="555" x2="788" y2="616" stroke="#12151a" stroke-width="1" marker-start="url(#dot)"/>
+    <text x="700" y="644">TPU CHASSIS,</text>
+    <text x="700" y="670">SINGLE PRINT</text>
+  </g>
+  <text x="64" y="666" fill="#8b8d93" font-size="15" letter-spacing="1">(SHOWN INSTALLED)</text>
+
+  <!-- legend -->
+  <g font-size="17" letter-spacing="1" fill="#1b4f72">
+    <path d="M 64 724 L 104 724" fill="none" stroke="#1b4f72" stroke-width="2.5" stroke-dasharray="9 5" marker-end="url(#arr)"/>
+    <text x="118" y="730">SLIDE-IN SWAP</text>
+  </g>
+
+  <!-- ══ title block ══ -->
+  <g>
+    <rect x="40" y="770" width="1120" height="60" fill="#f5f3ee" stroke="#12151a" stroke-width="2"/>
+    <line x1="720" y1="770" x2="720" y2="830" stroke="#12151a" stroke-width="1.2"/>
+    <line x1="1020" y1="770" x2="1020" y2="830" stroke="#12151a" stroke-width="1.2"/>
+    <text x="56" y="794" fill="#12151a" font-size="19" font-weight="bold" letter-spacing="1.5">MELVIN V6, MODULAR PLATFORM</text>
+    <text x="56" y="818" fill="#8b8d93" font-size="14" letter-spacing="1">PROTOTYPE SCHEMATIC, NOT TO SCALE</text>
+    <text x="736" y="794" fill="#12151a" font-size="14" letter-spacing="1">J. BALCÁRCEL</text>
+    <text x="736" y="818" fill="#8b8d93" font-size="14" letter-spacing="1">IN PROGRESS</text>
+    <text x="1036" y="808" fill="#1b4f72" font-size="19" font-weight="bold" letter-spacing="1.5">REV 6</text>
+  </g>
+</svg>

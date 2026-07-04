@@ -159,7 +159,8 @@ export const buildLog: BuildLogEntry[] = [
     title: "Melvin V3",
     status: "failed" as BuildLogStatus,
     statusLabel: "NHRL — May 2023",
-    photoLabel: "Post-combat damage, if available",
+    photoLabel: "Melvin V3 with the drum removed, 3D-printed bearing holders visible",
+    photoSrc: "/images/melvin-v3.jpg",
     body: [
       "Chassis panels were cut the same way as before, on the plasma CNC, but the side panels ran longer so they could be bent around the redesigned bearing holders. Same drum weapon, trimmed to fit on a bandsaw. Complete and ready for competition with no pre-battle issues.",
     ],
@@ -203,7 +204,8 @@ export const buildLog: BuildLogEntry[] = [
     title: "Melvin V6",
     status: "in-progress" as BuildLogStatus,
     statusLabel: "In progress — current build",
-    photoLabel: "Melvin V6 CAD or work-in-progress",
+    photoLabel: "Melvin V6 modular platform, prototype schematic",
+    photoSrc: "/images/melvin-v6-schematic.svg",
     body: [
       "The current build, and the first clean-sheet redesign since the original. Instead of another patch on the existing architecture, V6 is built around a brand-new modular system: subsystems designed to be swapped independently, so a damaged section means replacing a module between matches instead of rebuilding the robot. It takes V5's slide-in shuffler subassembly to its logical conclusion, and every previous rev's lesson feeds into the platform, from V3's cracked bearing holders to V4's energy-absorbing TPU.",
     ],
