@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import PhotoFrame from "./PhotoFrame";
-import { featuredProjects } from "@/lib/content";
+import { featuredProjects, otherProjects } from "@/lib/content";
 
 export default function FeaturedProjects() {
   return (
@@ -78,6 +78,53 @@ export default function FeaturedProjects() {
               </a>
             </div>
           </motion.div>
+        ))}
+      </div>
+
+      <div className="border-t border-steel-line pt-10">
+        <p className="mb-2 font-mono text-xs tracking-[0.08em] text-steel">OTHER PROJECTS</p>
+        {otherProjects.map((project, i) => (
+          <motion.article
+            key={project.id}
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: "-60px" }}
+            transition={{ duration: 0.5, delay: i * 0.05 }}
+            className={`grid grid-cols-1 items-start gap-8 py-8 md:grid-cols-[320px_1fr] md:gap-10 ${
+              i > 0 ? "border-t border-steel-line" : ""
+            }`}
+          >
+            <div>
+              <PhotoFrame
+                label={project.photoLabel}
+                src={project.photoSrc}
+                aspect={project.photoAspect ?? "square"}
+              />
+              <span className="mt-2.5 block font-mono text-[11px] tracking-wide text-steel">
+                {project.figTag}
+              </span>
+            </div>
+            <div>
+              <p className="mb-2.5 font-mono text-xs tracking-wide text-blueprint">
+                {project.kicker}
+              </p>
+              <h3 className="mb-3.5 font-display text-2xl font-semibold">{project.title}</h3>
+              <p className="mb-5 max-w-[60ch] text-[15px] text-[#3A3D44]">{project.lede}</p>
+              <ul className="flex flex-col gap-2">
+                {project.facts.map((fact) => (
+                  <li
+                    key={fact.label}
+                    className="flex gap-2.5 border-b border-dotted border-steel-line pb-2 text-sm"
+                  >
+                    <span className="min-w-[130px] font-mono text-[11px] tracking-wide text-steel uppercase">
+                      {fact.label}
+                    </span>
+                    {fact.value}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </motion.article>
         ))}
       </div>
     </section>

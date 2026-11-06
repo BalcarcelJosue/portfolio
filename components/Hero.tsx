@@ -10,9 +10,10 @@ export default function Hero() {
   const [ready, setReady] = useState(false);
 
   useEffect(() => {
-    setReady(true);
+    // Defer one frame so the entrance animation starts after hydration
+    const frame = requestAnimationFrame(() => setReady(true));
     const el = gridRef.current;
-    if (!el) return;
+    if (!el) return () => cancelAnimationFrame(frame);
 
     const handleMove = (e: MouseEvent) => {
       const rect = el.getBoundingClientRect();
@@ -23,7 +24,10 @@ export default function Hero() {
     };
 
     window.addEventListener("mousemove", handleMove);
-    return () => window.removeEventListener("mousemove", handleMove);
+    return () => {
+      cancelAnimationFrame(frame);
+      window.removeEventListener("mousemove", handleMove);
+    };
   }, []);
 
   return (

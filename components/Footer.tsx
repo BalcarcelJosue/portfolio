@@ -8,7 +8,7 @@ export default function Footer() {
           Let&apos;s talk.
         </h2>
         <p className="mb-10 text-lg text-[#A8ACB5]">
-          Open to Fall 2026 and Spring 2027 co-ops.
+          {profile.availability}
         </p>
         <div className="flex flex-wrap justify-center gap-8">
           <a

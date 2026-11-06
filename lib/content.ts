@@ -14,6 +14,8 @@ export const profile = {
   linkedin: "https://www.linkedin.com/in/josuebalcarcel",
   resumeUrl: "/resume.pdf",
   location: "Cleveland, OH / Darien, CT",
+  availability:
+    "Seeking Spring/Summer 2027 co-ops and full-time roles starting after May 2027 graduation.",
   heroPhotoLabel: "Josué in the shop, holding a gear assembly",
   heroPhotoSrc: "/images/hero-portrait.jpg",
 };
@@ -21,7 +23,7 @@ export const profile = {
 export const heroSpecs = [
   {
     label: "TOOLS",
-    value: "SolidWorks (CSWA) · Fusion 360 · Inventor · AutoCAD",
+    value: "SolidWorks (CSWA) · Fusion 360 · Onshape · Inventor · AutoCAD",
   },
   {
     label: "FABRICATION",
@@ -29,7 +31,8 @@ export const heroSpecs = [
   },
   {
     label: "CURRENTLY",
-    value: "Seeking Fall 2026 / Spring 2027 co-ops",
+    value:
+      "Undergraduate researcher at Cleveland Clinic. Seeking Spring/Summer 2027 co-ops and full-time roles starting after May 2027 graduation.",
   },
 ];
 
@@ -86,6 +89,37 @@ export const featuredProjects: FeaturedProject[] = [
     photoLabel: "Dual-axis solar tracker schematic illustration",
     photoSrc: "/images/solar-tracker-schematic.svg",
     draft: false,
+  },
+];
+
+export type OtherProject = {
+  id: string;
+  kicker: string;
+  title: string;
+  lede: string;
+  facts: { label: string; value: string }[];
+  figTag: string;
+  photoLabel: string;
+  photoSrc?: string;
+  photoAspect?: "square" | "tall" | "wide" | "box";
+};
+
+export const otherProjects: OtherProject[] = [
+  {
+    id: "b18-spectre",
+    kicker: "TEAM DESIGN PROJECT — FALL 2026 · EMAE 360",
+    title: "B18 Spectre — Flat-Twin Motorcycle Engine",
+    lede: "Team design of a flat-twin motorcycle engine in Onshape. Calculated crankshaft design parameters and modeled a three-main-bearing crankshaft with 180° crankpin phasing, then designed the cylinder head.",
+    facts: [
+      { label: "Configuration", value: "Flat-twin" },
+      { label: "Crankshaft", value: "3 main bearings, 180° crankpin phasing" },
+      { label: "CAD", value: "Onshape" },
+      { label: "My role", value: "Crankshaft + cylinder head" },
+    ],
+    figTag: "FIG. 3 — 180° FLAT-TWIN CRANKSHAFT, SCHEMATIC VIEW",
+    photoLabel: "Schematic of a three-main-bearing flat-twin crankshaft with 180° crankpin phasing",
+    photoSrc: "/images/flat-twin-crankshaft-schematic.svg",
+    photoAspect: "square",
   },
 ];
 
@@ -228,13 +262,23 @@ export type ExperienceEntry = {
 
 export const experience: ExperienceEntry[] = [
   {
+    id: "cleveland-clinic",
+    meta: "FALL 2026 – PRESENT · CLEVELAND, OH",
+    company: "Cleveland Clinic — Undergraduate Researcher",
+    photoLabel: "Illustrative schematic of a two-channel microfluidic chip with a porous membrane",
+    photoSrc: "/images/microfluidic-chip-schematic.svg",
+    photoAspect: "square" as const,
+    body: "Undergraduate researcher in Dr. Hyun Jung Kim's lab, working alongside Dr. Domin Koh, Dr. Chao Liu, and Dr. Nam Than on microfluidic organ-on-a-chip devices: small platforms that recreate human organ function, such as the gut, to support biomedical research. Gaining hands-on experience in microfabrication, including photolithography and 3D printing, and applying mechanical design and CAD skills to device development.",
+    tags: ["Microfluidics", "Organ-on-a-Chip", "Microfabrication", "Photolithography"],
+  },
+  {
     id: "cottrell",
     meta: "SUMMER 2024 · GAINESVILLE, GA",
     company: "Cottrell Trailers",
     photoLabel: "Cottrell production floor, car-hauler trailers on the line",
     photoSrc: "/images/cottrell-floor.jpg",
     photoAspect: "square" as const,
-    body: "Mechanical engineering internship at the world's largest manufacturer of over-the-road auto transport equipment. Focused on 3D modeling and 2D drafting in Autodesk Inventor and AutoCAD, both new tools at the time. Work included a round-tube component with slot, through-hole, and bracket-aligned notches, full assembly drawings with exploded views, and technical drawings for a switch from painted to non-skid tape trailer surfaces.",
+    body: "Mechanical engineering internship at the world's largest manufacturer of over-the-road auto transport equipment. Redesigned parts in Inventor to cut assembly time 15%, and implemented inspection-driven design fixes that reduced recurring defects 17%. Work also included a round-tube component with slot, through-hole, and bracket-aligned notches, full assembly drawings with exploded views, and technical drawings for a switch from painted to non-skid tape trailer surfaces. All 3D modeling and 2D drafting was in Autodesk Inventor and AutoCAD, both new tools at the time.",
     tags: ["Inventor", "AutoCAD", "2D Drafting", "DFM"],
   },
   {
@@ -266,7 +310,7 @@ export const experience: ExperienceEntry[] = [
     photoAspect: "square" as const,
     photoAspectRatio: "1660 / 1370",
     body: 'Co-founded Darien High School\'s first-ever robotics team in a school culture built around sports and the arts, and got it funded by the board of education. Competed in the 2023 "Charged Up" season as a rookie team, winning the Rookie All-Star Award. Modeled the swerve-drive chassis (pivoted from an initial 4-wheel direct-drive concept) and a pneumatic grabber mechanism in Fusion 360.',
-    tags: ["Team Founding", "Swerve Drive", "Fusion 360", "Rookie All-Star"],
+    tags: ["FIRST Rookie All-Star Award", "Team Founding", "Swerve Drive", "Fusion 360"],
   },
 ];
 
@@ -274,13 +318,13 @@ export const about = {
   photoLabel: "3D-printed guitar body, honeycomb infill, clamped up in the shop",
   photoSrc: "/images/guitar-print.jpg",
   paragraphs: [
-    "I'm a Mechanical Engineering student at Case Western Reserve University (Business Management minor), graduating May 2027. CSWA-certified in SolidWorks, bilingual in English and Spanish. The Spanish got a real workout in Fall 2025, studying abroad at Universidad Carlos III de Madrid and serving as Resident Assistant for CWRU's Madrid program.",
+    "I'm a Mechanical Engineering student at Case Western Reserve University (Business Management minor), graduating May 2027. CSWA-certified in SolidWorks, bilingual in English and Spanish. The Spanish got a real workout in Fall 2025, studying abroad at Universidad Carlos III de Madrid and serving as Resident Assistant for CWRU's Madrid program. Since Fall 2026 I've been an undergraduate researcher in Dr. Hyun Jung Kim's lab at Cleveland Clinic, applying CAD and microfabrication to microfluidic organ-on-a-chip devices.",
     "Outside the shop: running my own NHRL combat robotics team as a personal project, lead pianist and drummer at my church, and hands-on in my family's construction business, which means my engineering instincts get tested against real jobsites, not just tolerances on a drawing. Sometimes the worlds collide: the guitar body in the photo is 3D-printed, honeycomb infill and all.",
   ],
   skillGroups: [
     {
       label: "CAD & DESIGN",
-      value: "SolidWorks (CSWA) · Fusion 360 · Autodesk Inventor · AutoCAD",
+      value: "SolidWorks (CSWA) · Fusion 360 · Onshape · Autodesk Inventor · AutoCAD",
     },
     {
       label: "FABRICATION",
